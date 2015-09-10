@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/rl_logo_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/drone"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/drone" />
+
+        <ImageView
+            android:id="@+id/aviator_logo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/drone"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/aviator_logo" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="4dp"
+        android:text="Validating app..."
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+    <ProgressBar
+        android:id="@+id/loader_progress"
+        style="?android:attr/android:progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/txt_progress"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="true" />
+
+    <ImageView
+        android:id="@+id/apas_logo"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:padding="4dp"
+        android:src="@drawable/apas_logo" />
+
+</RelativeLayout>

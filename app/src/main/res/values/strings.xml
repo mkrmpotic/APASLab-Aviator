@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">APASLab Aviator</string>
+    <string name="flight_preparation">Flight Preparation</string>
+    <string name="about">About</string>
+    <string name="set_route">Set Route</string>
+    <string name="set">Set</string>
+    <string name="camera_connected">Conn Status: Connected</string>
+    <string name="camera_disconnected">Conn Status: Disconnected</string>
+    <string name="back">Back</string>
+
+    <!-- BluetoothChat -->
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Application.</string>
+    <string name="title_connecting">Connecting APASLab Base...</string>
+    <string name="title_connected_to">APASLab Base: </string>
+    <string name="title_not_connected">APASLab Base not connected</string>
+    
+    <!-- DeviceListActivity -->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+    <!-- Options Menu -->
+    <string name="connect">Connect a device</string>
+    <string name="discoverable">Make discoverable</string>
+    
+    <!-- AboutActivity -->
+    <string name="usage_instructions">Usage Instructions</string>
+
+</resources>

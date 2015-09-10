@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/aviator_logo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/aviator_logo" />
+
+    <RelativeLayout
+        android:id="@+id/rl_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aviator_logo"
+        android:layout_centerHorizontal="true" >
+
+        <RelativeLayout
+            android:id="@+id/btn_flight_prep"
+            style="@style/btnStyleRed"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="3dp" >
+
+            <ImageView
+                android:id="@+id/ic_flight_prep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_map" />
+
+            <TextView
+                android:id="@+id/txt_flight_prep"
+                style="@style/btnStyleRedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ic_flight_prep"
+                android:layout_centerHorizontal="true"
+                android:text="@string/flight_preparation" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_about"
+            style="@style/btnStyleRed"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@id/btn_flight_prep" >
+
+            <ImageView
+                android:id="@+id/ic_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_about" />
+
+            <TextView
+                android:id="@+id/txt_about"
+                style="@style/btnStyleRedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ic_about"
+                android:layout_centerHorizontal="true"
+                android:text="@string/about" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

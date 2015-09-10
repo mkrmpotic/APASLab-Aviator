@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:padding="4dp"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/txt_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_seekbar_container"
+        android:layout_width="fill_parent"
+        android:layout_height="155dp"
+        android:layout_below="@id/txt_desc"
+        android:padding="3dp" >
+
+        <SeekBar
+            android:id="@+id/sb_altitude"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:progress="15"
+            android:rotation="270" />
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/txt_altitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_below="@id/rl_seekbar_container" />
+
+    <Button
+        android:id="@+id/btn_set"
+        style="@style/btnStyleRedTextual" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_altitude"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/set" />
+
+</RelativeLayout>
